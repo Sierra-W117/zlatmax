@@ -1,0 +1,61 @@
+@import 'variables';
+
+.sales{
+    padding-bottom: 60px;
+}
+
+.container_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.container_two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+.container_three{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 10px;
+    align-items: center;
+
+}
+
+.main_font{
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 30px;
+    color: $close-100-black;
+  
+    line-height: auto; //34
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 5%;
+}
+
+.side_font{
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    color: $close-50-black;
+  
+    line-height: auto;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 5%;
+}

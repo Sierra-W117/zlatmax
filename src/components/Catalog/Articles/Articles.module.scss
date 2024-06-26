@@ -1,0 +1,79 @@
+@import 'variables';
+
+.article{
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.container_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.container_two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.container_three{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: $box-shadow;
+}
+
+.main_font{
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    color: $close-100-black;
+  
+    line-height: 34px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0;
+
+    padding-top: 20px;
+    padding-bottom: 8px; 
+}
+
+.side_font{
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    color: $close-100-gray;
+  
+    line-height: 34px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 0;
+}
+
+.prime_font{
+    font-family: $font-montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    color: $close-100-black;
+  
+    line-height: 46px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 5%;
+}

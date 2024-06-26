@@ -1,0 +1,48 @@
+@import 'variables';
+
+.prefooter {
+    padding-top: 60px;
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 100%;
+
+    background-image: url('./img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.prefooter_container_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.titles {
+    font-family: $font-montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    color: $active-button-color;
+  
+    line-height: auto;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 5%;
+}
+
+.text {
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    color: $white-100-color;
+  
+    line-height: 27px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 3%;
+}

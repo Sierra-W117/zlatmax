@@ -1,0 +1,126 @@
+@import 'variables';
+
+.footer {
+    background-color: $close-100-black;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.footer_container_one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_container_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 20%;
+
+    gap: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    gap: 10px;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 20px;
+
+    border-style: solid;
+    border-radius: 1%;
+    border-width: 1px;
+    border-color: $white-100-color;
+    background-color: $white-5-color;
+}
+
+.line {
+    width: 100%;
+    max-width: 1575px;
+    height: 1px;
+    background-color: $white-50-color;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.titles {
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    color: $white-100-color;
+  
+    line-height: auto;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 0;
+}
+
+.text {
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    color: $white-80-color;
+  
+    line-height: 27px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 0;
+}
+
+.text_bottom {
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    color: $white-80-color;
+  
+    line-height: 27px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 0;
+}
+
+.text_span {
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    color: $white-80-color;
+  
+    line-height: 27px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 0;
+    
+    color: $active-button-color;
+}
+
+.text_example{
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    color: $white-50-color;
+  
+    line-height: 27px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 0;
+}
