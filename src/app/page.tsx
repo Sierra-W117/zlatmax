@@ -1,40 +1,38 @@
-import Link from "next/link";
-import Sales from "@/components/Catalog/Sales";
-import Flashlights from "@/components/Catalog/Flashlights";
+import Catalog from "@/components/Catalogs/Catalog";
+import Catalog2 from "@/components/Catalogs/Catalog2";
+import News from "@/components/Catalogs/News";
+import Articles from "@/components/Catalogs/Articles";
+import MainCatalog from "@/components/Catalogs/MainCatalog";
 
-import Flashlights2 from "@/components/Catalog/Flashlights2";
-
-import Articles from "@/components/Catalog/Articles";
-
-import News from "@/components/Catalog/News";
-
-import MainCatalog from "@/components/Catalog/MainCatalog";
+import knife from '../../public/images/knife.png'
+import flashlight from '../../public/images/flashlight.png'
 
 import PreFooter from "@/components/PreFooter";
+import PostHeader from "@/components/PostHeader";
 
-import Tops from "@/components/Catalog/Tops";
 
-import NavigationMenu from "@/components/NavigationMenu";
 
 export default function Home() {
   return (
     <div>
-      <NavigationMenu />
+      <PostHeader />
 
       <MainCatalog />
-      <Tops />
-      
-      <News />
-      <Sales />
-      <Sales />
+      <Catalog imageSrc={knife} mainText={'Хиты продаж'} sideText={'Перейти в каталог'}/>
 
-      <News />
-      <Sales />
-      <Sales />
+      <News photo={knife}/>
+      <Catalog imageSrc={knife} mainText={'Акции'} sideText={'Все акции'}/>
+      <Catalog imageSrc={knife} mainText={'Акции'} sideText={'Все акции'}/>
+
+      <News photo={knife}/>
+      <Catalog imageSrc={knife} mainText={'Акции'} sideText={'Все акции'}/>
+      <Catalog imageSrc={knife} mainText={'Акции'} sideText={'Все акции'}/>
 
       <Articles />
-      <Flashlights2 />
-      <Flashlights />
+      <Catalog2 />
+      <Catalog imageSrc={flashlight} mainText={'Фонари'} sideText={'Перейти в каталог'}/>
+
+      
       <PreFooter />
     </div>
   );

@@ -1,0 +1,63 @@
+@import 'src/styles/variables';
+
+.card{
+    width: 375px;
+    height: 350px;
+    gap: 20px;
+    margin: 0 auto;
+    box-shadow: $box-shadow;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 30px;
+    gap: 8px;
+}
+
+.font{
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    color: $close-100-black;
+  
+    line-height: 34px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0;
+}
+
+.font_side{
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    color: $close-100-gray;
+  
+    line-height: 34px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0;
+}
+
+.img{
+    width: 375px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width: 320px) and (max-width: 1250px) {
+    .img{
+        width: 290px;
+    }
+    .card {
+        width: 290px;
+    }
+    .card2{
+        padding: 0px;
+        gap: 8px;
+    }
+}    

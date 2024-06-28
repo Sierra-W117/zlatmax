@@ -1,0 +1,62 @@
+@import 'src/styles/variables';
+
+.sales{
+    width: 100%;
+    padding-top: 100px;
+}
+
+.container_one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.main_font{
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    color: $black-100-color;
+  
+    line-height: 34px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 0%;
+}
+
+.side_font{
+    font-family: $font-montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: $black-100-color;
+  
+    line-height: 34px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0; //paragraph-spacing
+    letter-spacing: 0;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 1250px) {
+    .container_one{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    
+        gap: 20px;
+    }
+}

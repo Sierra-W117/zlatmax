@@ -1,16 +1,15 @@
-import '@/styles/index.scss';
-
 import type { Metadata } from "next";
 
-import { Montserrat } from "next/font/google";
+import '@/styles/index.scss';
 
-import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-    title: "zlatmax",
-    description: "Проект 1",
+  title: "zlatmax",
 };
+
+import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
   subsets: ["cyrillic"],
@@ -19,17 +18,17 @@ const montserrat = Montserrat({
 });
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="ru" className={`${montserrat.variable}`}>
-            <body className="wrapper">
-                <Header />
-                <main>{children}</main>
-                <Footer />
-            </body>
-        </html>
-    );
+  return (
+      <html lang="ru" className={`${montserrat.variable}`}>
+          <body className="wrapper">
+              <Header />
+              <main>{children}</main>
+              <Footer />
+          </body>
+      </html>
+  );
 }

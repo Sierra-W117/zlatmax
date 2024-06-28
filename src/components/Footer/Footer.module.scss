@@ -1,28 +1,38 @@
-@import 'variables';
+@import 'src/styles/variables';
+
+/*
+    inline: Displays an element as an inline element (like <span>). Any height and width properties will have no effect.
+    block: Displays an element as a block element (like <p>). It starts on a new line and takes up the whole width.
+    inline-block: Displays an element as an inline-level block container. The element itself is formatted as an inline 
+    element, but you can apply height and width values.
+    flex: Displays an element as a block-level flex container.
+    grid: Displays an element as a block-level grid container.
+    none: Completely removes the element from the layout. The element will be invisible.
+*/
 
 .footer {
     background-color: $close-100-black;
-    width: 100%;
+    max-width: 100vw;
     padding-top: 100px;
 }
 
-.footer_container_one {
+.footer_row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.footer_container_two {
+.footer_column {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
     width: 20%;
-
+    
     gap: 20px;
 }
 
-.stats {
+.with_img {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -58,7 +68,7 @@
     margin-right: 0px;
 }
 
-.titles {
+.font_title {
     font-family: $font-montserrat;
     font-weight: 600;
     font-size: 18px;
@@ -71,7 +81,7 @@
     letter-spacing: 0;
 }
 
-.text {
+.font {
     font-family: $font-montserrat;
     font-weight: 500;
     font-size: 18px;
@@ -82,9 +92,13 @@
     vertical-align: top;
     padding-bottom: 0; //paragraph-spacing
     letter-spacing: 0;
+
+    &Active{
+        color: $active-button-color;
+    }
 }
 
-.text_bottom {
+.font_bottom {
     font-family: $font-montserrat;
     font-weight: 500;
     font-size: 14px;
@@ -97,10 +111,10 @@
     letter-spacing: 0;
 }
 
-.text_span {
+.font_example{
     font-family: $font-montserrat;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     color: $white-80-color;
   
     line-height: 27px;
@@ -108,19 +122,40 @@
     vertical-align: top;
     padding-bottom: 0; //paragraph-spacing
     letter-spacing: 0;
-    
-    color: $active-button-color;
+
+    &1{
+        color: $white-50-color;
+    }
 }
 
-.text_example{
-    font-family: $font-montserrat;
-    font-weight: 500;
-    font-size: 14px;
-    color: $white-50-color;
-  
-    line-height: 27px;
-    text-align: left;
-    vertical-align: top;
-    padding-bottom: 0; //paragraph-spacing
-    letter-spacing: 0;
+// @media (min-width: 769px) and (max-width: 1450px){
+//     .footer_row {
+//         flex-wrap: wrap;
+//         gap: 60px;
+//     }
+//     .footer_column{
+//         width: calc(50% - 60px);
+//     }
+// }
+
+@media (min-width: 320px) and (max-width: 1250px) {
+    .footer {
+        padding-top: 60px;
+    }
+
+    .footer_row {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .footer_column{
+        align-items: center;
+        width: 100%;
+    }
+
+    .font{
+        text-align: center;
+    } 
 }

@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'src/styles/variables';
 
 .text_one{
     font-family: $font-montserrat;
@@ -85,13 +85,14 @@
     display: flex;
     direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .header_main2 {
     display: flex;
     direction: row;
     justify-content: space-between;
-    width: 45%;
+    width: 35%;
     //width: calc(50% - 20px);
     align-items: center;
 }
@@ -100,8 +101,8 @@
     display: flex;
     direction: row;
     justify-content: space-between;
-    width: 40%;
-    //width: calc(50% - 20px);
+    width: 45%;
+    //width: calc(40% - 10px);
     align-items: center;
 }
 
@@ -124,7 +125,8 @@
 .header_last_level{
     display: flex;
     direction: row;
-    gap: 120px;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .phone {
@@ -179,4 +181,43 @@
     letter-spacing: 0;
 
     border-bottom-style: solid;
+}
+
+.header_mobile{
+    display: none;
+    
+}
+
+.header1_mobile {
+    background: $close-100-black;
+    padding-top: 20px;
+    height: 70px;
+}
+
+.header2_mobile {
+    background: $header-white;
+    padding-top: 20px;
+    height: 70px;
+}
+
+.header_main_mobile{
+    display: flex;
+    direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+}
+
+
+@media (min-width: 320px) and (max-width: 1250px) {
+    .header1{
+        display: none;
+    }
+    .header2{
+        display: none;
+    }
+
+    .header_mobile{
+        display: block;
+    }
 }

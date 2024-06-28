@@ -1,15 +1,15 @@
-@import 'variables';
+@import 'src/styles/variables';
 
 .prefooter {
     padding-top: 60px;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding-bottom: 60px;
     width: 100%;
 
-    background-image: url('./img/background.png');
+    background-image: url('../../../public/images/background_prefooter.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 .prefooter_container_one {
@@ -45,4 +45,22 @@
     vertical-align: top;
     padding-bottom: 0; //paragraph-spacing
     letter-spacing: 3%;
+}
+
+@media (min-width: 320px) and (max-width: 1250px) {
+    .text {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .titles {
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .prefooter {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }

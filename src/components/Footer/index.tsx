@@ -4,19 +4,18 @@ import Image from 'next/image';
 
 import styles from './Footer.module.scss';
 
-import Facebook from './img/Facebook.svg'
-import Telegram from './img/Telegram.svg'
-import Viber from './img/Viber.svg'
-import Whatsapp from './img/Whatsapp.svg'
+import Facebook from '../../../public/icons/Facebook.svg'
+import Telegram from '../../../public/icons/Telegram.svg'
+import Viber from '../../../public/icons/Viber.svg'
+import Whatsapp from '../../../public/icons/Whatsapp.svg'
 
-import phone from './ics/phone.svg'
-import clocks from './ics/clocks.svg'
-import location from './ics/location.svg'
-import mail from './ics/mail.svg'
+import phone from '../../../public/icons/phone.svg'
+import clocks from '../../../public/icons/clocks.svg'
+import location from '../../../public/icons/location.svg'
+import mail from '../../../public/icons/mail.svg'
 
-import cube from './ics/cube.svg'
-
-import button from './ics/button.svg'
+import cube from '../../../public/icons/cube.svg'
+import next_button from '../../../public/icons/next_button.svg'
 
 export default function Footer() {
     return (
@@ -24,77 +23,76 @@ export default function Footer() {
 
             <div className="container">
 
-                <div className={styles.footer_container_one}>
-                    {/*
-                    ul is the unordered list element, which is used to group related items together.
-                    li is the list item element, which represents each item within the list.
-                    */}
-                    <ul className={styles.footer_container_two}>
-                        <li className={styles.titles}>ИНФОРМАЦИЯ</li>
+                <div className={styles.footer_row}>
+                    <div className={styles.footer_column}>
+                        <div className={styles.font_title}>ИНФОРМАЦИЯ</div>
                         
-                        <li className={styles.text}><a href='/' className={styles.text}>Златоустовские ножи <br></br>в Москве и Московской <br></br>области</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>Ножевые стали</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>О нас</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>Условия оплаты <br></br>и доставки</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>Политика <br></br>конфиденциальности</a></li>
-                    </ul>
+                        <div className={styles.font}><a href='/' className={styles.font}>
+                        Златоустовские ножи <b></b>в Москве и Московской <br></br>области</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>Ножевые стали</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>О нас</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>
+                        Условия оплаты <br></br>и доставки</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>
+                        Политика <br></br>конфиденциальности</a></div>
+                    </div>
 
-                    <ul className={styles.footer_container_two}>
-                        <li className={styles.titles}>СЛУЖБА ПОДДЕРЖКИ</li>
+                    <div className={styles.footer_column}>
+                        <div className={styles.font_title}>СЛУЖБА ПОДДЕРЖКИ</div>
                         
-                        <li className={styles.text}><a href='/' className={styles.text}>Контактная информация</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>Возврат товара</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>Карта сайта</a></li>
-                    </ul>
+                        <div className={styles.font}><a href='/' className={styles.font}>Контактная информация</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>Возврат товара</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>Карта сайта</a></div>
+                    </div>
 
-                    <ul className={styles.footer_container_two}>
-                        <li className={styles.titles}>ДОПОЛНИТЕЛЬНО</li>
+                    <div className={styles.footer_column}>
+                        <div className={styles.font_title}>ДОПОЛНИТЕЛЬНО</div>
                         
-                        <li className={styles.text}><a href='/' className={styles.text}>Подарочные сертификаты</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>Партнеры</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>Товары со скидкой</a></li>
-                    </ul>
+                        <div className={styles.font}><a href='/' className={styles.font}>Подарочные сертификаты</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>Партнеры</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>Товары со скидкой</a></div>
+                    </div>
 
-                    <ul className={styles.footer_container_two}>
-                        <li className={styles.titles}>ЛИЧНЫЙ КАБИНЕТ</li>
+                    <div className={styles.footer_column}>
+                        <div className={styles.font_title}>ЛИЧНЫЙ КАБИНЕТ</div>
                         
-                        <li className={styles.text}><a href='/' className={styles.text}>Личный кабинет</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>История заказов</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>Мои закладки</a></li>
-                        <li className={styles.text}><a href='/' className={styles.text}>Рассылка новостей</a></li>
-                    </ul>
+                        <div className={styles.font}><a href='/' className={styles.font}>Личный кабинет</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>История заказов</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>Мои закладки</a></div>
+                        <div className={styles.font}><a href='/' className={styles.font}>Рассылка новостей</a></div>
+                    </div>
                 </div>
                     
                 <hr className={styles.line}/> {/* hr - horizontal line */}
 
-                <div className={styles.footer_container_one}>
+                <div className={styles.footer_row}>
 
-                    <ul className={styles.footer_container_two}>
-                        <li className={styles.titles}> КОНТАКТЫ</li>
+                    <div className={styles.footer_column}>
+                        <div className={styles.font_title}> КОНТАКТЫ</div>
                         
-                        <div  className={styles.stats}>
+                        <div  className={styles.with_img}>
                             <Image src={phone} alt="phone"/>
-                            <li className={styles.text}>8 (800) 777-49-67</li>
+                            <div className={styles.font}>8 (800) 777-49-67</div>
                         </div>
 
-                        <div  className={styles.stats}>
+                        <div  className={styles.with_img}>
                             <Image src={clocks} alt="clocks"/>
-                            <li className={styles.text}>Пн-Пт<br></br>7:00 - 16:00 (МСК)</li>
+                            <div className={styles.font}>Пн-Пт<br></br>7:00 - 16:00 (МСК)</div>
                             
                         </div>
 
-                        <div  className={styles.stats}>
+                        <div  className={styles.with_img}>
                             <Image src={location} alt="location"/>
-                            <li className={styles.text}>Златоуст,<br></br>ул. Шоссейная,<br></br>д. 1, офис «6Б»</li>
+                            <div className={styles.font}>Златоуст,<br></br>ул. Шоссейная,<br></br>д. 1, офис «6Б»</div>
                             
                         </div>
 
-                        <div  className={styles.stats}>
+                        <div  className={styles.with_img}>
                             <Image src={mail} alt="mail"/>
-                            <li className={styles.text}>info@zlatmax.ru</li>
+                            <div className={styles.font}>info@zlatmax.ru</div>
                         </div>
 
-                        <div  className={styles.stats}>
+                        <div  className={styles.with_img}>
                         
                             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                                 <Image src={Facebook} alt="Facebook" />
@@ -114,55 +112,54 @@ export default function Footer() {
 
                         </div>
 
-                    </ul>
+                    </div>
 
-                    <ul className={styles.footer_container_two}>
-                        <li className={styles.titles}>ПОЛЕЗНЫЕ ССЫЛКИ</li>
+                    <div className={styles.footer_column}>
+                        <div className={styles.font_title}>ПОЛЕЗНЫЕ ССЫЛКИ</div>
                         
-                        <li className={styles.text}><a href='/' className={styles.text}>Способы оплаты и доставки</a></li>
-                    </ul>
+                        <div className={styles.font}><a href='/' className={styles.font}>Способы оплаты и доставки</a></div>
+                    </div>
 
-                    <ul className={styles.footer_container_two}>
-                        <li className={styles.titles}>НАША ГАРАНТИЯ</li>
+                    <div className={styles.footer_column}>
+                        <div className={styles.font_title}>НАША ГАРАНТИЯ</div>
 
-                        <li className={styles.text}>Недовольны своей покупкой? <br></br>Вы можете вернуть ее в течении <br></br>30 дней с даты получения,<br></br>согласно <span className={styles.text_span}>нашим правилам</span> </li>
+                        <div className={styles.font}>Недовольны своей покупкой? <br></br>Вы можете вернуть ее в течении <br></br>30 дней с даты получения,<br></br>согласно <span className={styles.fontActive}>нашим правилам</span> </div>
 
-                    </ul>
+                    </div>
 
-                    <ul className={styles.footer_container_two}>
-                        <li className={styles.titles}> НОВОСТНАЯ РАССЫЛКА</li>
+                    <div className={styles.footer_column}>
+                        <div className={styles.font_title}> НОВОСТНАЯ РАССЫЛКА</div>
                         
-                        <li className={styles.text}><a href='/' className={styles.text}>Подпишитесь прямо сейчас!</a></li>
+                        <div className={styles.font}><a href='/' className={styles.font}>Подпишитесь прямо сейчас!</a></div>
 
                         <div className={styles.input}>
-                            <li className={styles.text_example}>example@gmail.com</li>
-                            <Image src={button} alt="button"/>
+                            <div className={styles.font_example1}>example@gmail.com</div>
+                            <Image src={next_button} width={50} height={50} alt="next_button" />
                         </div>
 
-                        <div  className={styles.stats}>
+                        <div  className={styles.with_img}>
                         
                             <Image src={cube} alt="cube"/>
-                            <li className={styles.text}>Я прочитал Условия соглашения и согласен с условиями</li>
+                            <div className={styles.font_example}>Я прочитал Условия соглашения и согласен с условиями</div>
 
                         </div>
 
-                    </ul>
+                    </div>
                 </div>
 
                 <hr className={styles.line}/>
 
-                <div className={styles.footer_container_one}>
-
+                <div className={styles.footer_row}>
                     
-                    <li className={styles.text_bottom} style={{listStyle: 'none'}}>Все материалы, 
+                    <div className={styles.font_bottom}>Все материалы, 
                         размещенные на сайте, носят справочный 
                         характер и не являются <br></br>публичной офертой, определяемойположениями Статьи 
                         437 Гражданского кодекса Российской Федерации.<br></br>При копировании материалов 
-                        гиперссылка на www.zlatmax.ru обязательна!</li>
+                        гиперссылка на www.zlatmax.ru обязательна!</div>
                     
                     
-                    <p className={styles.text_bottom}><a href='/' className={styles.text_bottom}>Златоустовские 
-                    ножи www.zlatmax.ru ©</a></p>
+                    <div className={styles.font_bottom}><a href='/' className={styles.font_bottom}>Златоустовские 
+                    ножи www.zlatmax.ru ©</a></div>
 
                 </div>
 

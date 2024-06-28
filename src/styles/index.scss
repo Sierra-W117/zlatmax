@@ -8,13 +8,11 @@
 }
 
 .container {
-  width: 100%;
-  max-width: 1920px;
-
-  padding-left: 163px;
-  padding-right: 163px;
-  padding-bottom: 60px;
+  max-width: 1682px;
+  width: calc(100% - 88px);
   
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
-  
+

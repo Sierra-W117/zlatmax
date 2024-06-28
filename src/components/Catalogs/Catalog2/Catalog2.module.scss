@@ -1,0 +1,56 @@
+@import 'src/styles/variables';
+
+.catalog{
+    padding-bottom: 60px;
+}
+
+.container_one{
+    //width: 100%;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container_two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card_name {
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    color: $black-100-color;
+  
+    line-height: auto;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 15px; //paragraph-spacing
+    letter-spacing: 0;
+}
+
+.card_description {
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    color: $black-100-color;
+  
+    line-height: auto;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0;
+
+    padding-top: 35px; 
+    padding-bottom: 46px; 
+}
+
+@media (min-width: 320px) and (max-width: 1600px) {
+    .container_one{
+        flex-direction: column;
+        //width: 50%;
+        //flex-wrap: wrap;
+    }
+}
